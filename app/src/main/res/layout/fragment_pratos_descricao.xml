@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".pratos_descricao">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pratos"/>
+
+    <TextView
+        android:id="@+id/txtNomeRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="230dp"
+        android:text="Salada com molho Gengibre"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."
+        android:textColor="@color/colorGrey"
+        android:layout_marginTop="300dp"
+        android:textSize="24dp"
+        android:layout_marginLeft="10dp"/>
+
+
+</FrameLayout>

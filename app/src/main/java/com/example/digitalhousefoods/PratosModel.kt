@@ -1,4 +1,4 @@
 package com.example.digitalhousefoods
 
-class PratosModel {
+class PratosModel() {
 }

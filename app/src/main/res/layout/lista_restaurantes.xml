@@ -30,8 +30,8 @@
                 android:id="@+id/txtNomeRestauranteItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tomy Roma's"
-                android:textSize="36dp"
+                android:text="@string/tomy_roma_s"
+                android:textSize="36sp"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 />
             <TextView
@@ -39,8 +39,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Av. Lavandisca, 717 - Indianópolis, São Paulo"
-                android:textSize="18dp"
+                android:text="@string/av_lavandisca_717_indian_polis_s_o_paulo"
+                android:textSize="18sp"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="?android:attr/textColorSecondary"
                 />
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/fecha_s_22_00"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="?android:attr/textColorSecondary"
                 />

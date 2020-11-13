@@ -30,7 +30,7 @@
                 android:id="@+id/txtNomeDoPrato"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Salada com molho Gengibre"
+                android:text="@string/salada_com_molho_gengibre"
                 android:textSize="24sp"
                 android:textColor="@color/colorGrey3"
                 android:textAppearance="?attr/textAppearanceHeadline6"

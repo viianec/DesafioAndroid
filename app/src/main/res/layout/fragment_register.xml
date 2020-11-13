@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/colorGrey1"
-                android:hint="Nome"
+                android:hint="@string/nome"
                 android:inputType="text"
                 android:textColor="@color/colorBlue"
                 android:textColorHint="@color/colorGrey" />
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/colorGrey1"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/colorBlue"
                 android:textColorHint="@color/colorGrey" />
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/colorGrey1"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:textColor="@color/colorBlue"
                 android:textColorHint="@color/colorGrey" />
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/colorGrey1"
-                android:hint="Repeat password"
+                android:hint="@string/repeat_password"
                 android:inputType="textPassword"
                 android:textColor="@color/colorBlue"
                 android:textColorHint="@color/colorGrey" />
@@ -95,7 +95,7 @@
             android:layout_marginTop="300dp"
             android:background="@color/colorRed"
             android:foreground="?android:attr/selectableItemBackgroundBorderless"
-            android:text="REGISTER"
+            android:text="@string/register"
             android:textColor="@color/colorWhite"
             android:textSize="16sp" />
 

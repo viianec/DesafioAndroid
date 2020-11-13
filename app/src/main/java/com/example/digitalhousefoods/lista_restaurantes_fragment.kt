@@ -51,12 +51,10 @@ class lista_restaurantes_fragment : Fragment() {
         return minhaView
     }
 
-
-
     companion object {
-        const val NOME_RESTAURANTE = "NAME"
-        const val IMAGEM_RESTAURANTE = "IMAGE"
-        const val ENDERECO_RESTAURAMTE = "ENDERECO"
-        const val HORARIO_RESTAURANTE = "HORARIO"
+        const val nomeRestaurante = "nome"
+        const val imagemRestaurante = "imagem"
+        const val enderecoRestaurante = "endereco"
+        const val horarioRestaurante = "horario"
     }
 }

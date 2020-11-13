@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorGrey1"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/colorBlue"
                 android:textColorHint="@color/colorGrey" />
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/colorGrey1"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:textColor="@color/colorBlue"
                 android:textColorHint="@color/colorGrey" />
@@ -58,7 +58,7 @@
             android:layout_marginTop="50dp"
             android:background="@color/colorRed"
             android:foreground="?android:attr/selectableItemBackgroundBorderless"
-            android:text="log in"
+            android:text="@string/log_in"
             android:textColor="@color/colorWhite"
             android:textSize="16sp" />
 
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:gravity="center"
-            android:text="OR" />
+            android:text="@string/or" />
 
         <Button
             android:id="@+id/btnRegisterLogin"
@@ -78,7 +78,7 @@
             android:layout_marginTop="170dp"
             android:background="@color/colorGrey"
             android:foreground="?android:attr/selectableItemBackgroundBorderless"
-            android:text="REGISTER"
+            android:text="@string/register"
             android:textColor="@color/colorWhite"
             android:textSize="16sp" />
 

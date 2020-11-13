@@ -6,8 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 import kotlinx.android.synthetic.main.fragment_log_in.*
 
 
@@ -32,8 +35,17 @@ class LogIn_fragment : Fragment() {
 
     private fun login(view: View) {
         view.findViewById<Button>(R.id.btnLogin).setOnClickListener {
-            val navController = findNavController()
-            navController.navigate(R.id.action_logIn_to_lista_restaurantes)
+            val email = view.findViewById<TextInputEditText>(R.id.txtEmailLogin)?.text.toString()
+            val password = view.findViewById<TextInputEditText>(R.id.txtPasswordLogin)?.text.toString()
+             if(email.isEmpty()) {
+                 view.findViewById<TextInputEditText>(R.id.txtEmailLogin).error = "Campo vazio!"
+             } else if (password.isEmpty()){
+                 view.findViewById<TextInputEditText>(R.id.txtPasswordLogin).error = "Campo vazio!"
+             } else {
+                 val navController = findNavController()
+                 navController.navigate(R.id.action_logIn_to_lista_restaurantes)
+                 Toast.makeText(context, "Login efetuado", Toast.LENGTH_SHORT).show()
+             }
         }
     }
 
@@ -44,4 +56,6 @@ class LogIn_fragment : Fragment() {
         }
 
     }
+
+
 }

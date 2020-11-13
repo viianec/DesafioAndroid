@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/logIn">
+    <fragment
+        android:id="@+id/logIn"
+        android:name="com.example.digitalhousefoods.LogIn_fragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logIn_to_register2"
+            app:destination="@id/register2" />
+        <action
+            android:id="@+id/action_logIn_to_lista_restaurantes"
+            app:destination="@id/lista_restaurantes" />
+    </fragment>
+    <fragment
+        android:id="@+id/register2"
+        android:name="com.example.digitalhousefoods.Register_fragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register2_to_logIn"
+            app:destination="@id/logIn" />
+        <action
+            android:id="@+id/action_register2_to_lista_restaurantes"
+            app:destination="@id/lista_restaurantes" />
+    </fragment>
+    <fragment
+        android:id="@+id/lista_restaurantes"
+        android:name="com.example.digitalhousefoods.lista_restaurantes_fragment"
+        android:label="fragment_lista_restaurantes"
+        tools:layout="@layout/fragment_lista_restaurantes" >
+        <action
+            android:id="@+id/action_lista_restaurantes_to_pratos_lista_item"
+            app:destination="@id/pratos_lista_item" />
+    </fragment>
+    <fragment
+        android:id="@+id/pratos_lista_item"
+        android:name="com.example.digitalhousefoods.pratos_lista_item_fragment"
+        android:label="pratos_lista_item" >
+        <action
+            android:id="@+id/action_pratos_lista_item_to_pratos_descricao"
+            app:destination="@id/pratos_descricao" />
+        <action
+            android:id="@+id/action_pratos_lista_item_to_lista_restaurantes"
+            app:destination="@id/lista_restaurantes" />
+    </fragment>
+    <fragment
+        android:id="@+id/pratos_descricao"
+        android:name="com.example.digitalhousefoods.pratos_descricao_fragment"
+        android:label="fragment_pratos_descricao"
+        tools:layout="@layout/fragment_pratos_descricao" >
+        <action
+            android:id="@+id/action_pratos_descricao_to_pratos_lista_item"
+            app:destination="@id/pratos_lista_item" />
+    </fragment>
+</navigation>

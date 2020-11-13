@@ -4,16 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".pratos_descricao">
+    tools:context=".pratos_descricao_fragment">
 
     <ImageView
+        android:id="@+id/imgPratoDescricao"
         android:layout_width="match_parent"
         android:layout_height="283dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/pratos"/>
 
     <TextView
-        android:id="@+id/txtNomeRestaurante"
+        android:id="@+id/txtNomeDoPratoDescricao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -23,6 +24,7 @@
         android:textSize="30sp"
         android:textStyle="bold" />
     <TextView
+        android:id="@+id/txtDescricaoDoPrato"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."

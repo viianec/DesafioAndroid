@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogIn">
+    tools:context=".LogIn_fragment">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,6 +19,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEmailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorGrey1"
@@ -36,6 +37,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPasswordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -61,6 +63,7 @@
             android:textSize="16sp" />
 
         <TextView
+            android:id="@+id/txtOr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -68,7 +71,7 @@
             android:text="OR" />
 
         <Button
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnRegisterLogin"
             android:layout_width="333dp"
             android:layout_height="40dp"
             android:layout_gravity="center"

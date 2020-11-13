@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".lista_pratos">
+    tools:context=".lista_pratos_restaurante_fragment">
 
     <ImageView
+        android:id="@+id/imgRestaurante"
         android:layout_width="match_parent"
         android:layout_height="283dp"
         android:scaleType="fitXY"
@@ -36,6 +37,7 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/txtListaPratos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/fragment_pratos_lista_item"
